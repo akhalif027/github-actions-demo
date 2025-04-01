@@ -1,0 +1,1 @@
+The purpose of this project is to learn how to automate tests whenever new changes are committed to a new respository. This is useful because we might forget to manually run test and break production. 

@@ -1,0 +1,1 @@
+print("All code listed here is free and publically avaliable for open use.")
