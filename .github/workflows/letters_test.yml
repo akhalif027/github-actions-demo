@@ -33,7 +33,7 @@ jobs:
                 pip install -r requirements.txt
 
             - name: Test App Code
-              run: python /test_main.py
+              run: python ../Package/test_main.py
             
 #Done
 #branch again 
