@@ -11,3 +11,4 @@ def test_adding_numbers():
     assert adding_letters(1, '2') == 'Incorrect input. Insert text only.'
 
 
+#Testing if pull requests is checked. 
