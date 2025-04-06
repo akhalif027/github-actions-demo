@@ -5,17 +5,16 @@ on:
         branches:
             - main
 
-
 jobs:
     test:
         runs-on: ubuntu-latest
-        defaults: 
-            run:
-                working-directory: ./Package/
+        # defaults: 
+        #     run:
+        #         working-directory: ./Package/
 
         strategy:
             matrix:
-                python-version: [3.11]
+                python-version: [3.11] 
 
         env:
             MODE: "dev"
@@ -31,8 +30,11 @@ jobs:
             - name: Install Python Dependecies
               run: |
                 python -m pip install --upgrade pip 
-                pip install -r ../requirements.txt
+                pip install -r requirements.txt
 
             - name: Test App Code
               run: python Package/test_main.py
             
+#Done
+#branch again 
+

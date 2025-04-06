@@ -1,5 +1,5 @@
 import pytest
-from Package.letters import adding_letters
+from letters import adding_letters
 
 def test_main():
     assert adding_letters('I love', ' rice') == 'I love rice'
