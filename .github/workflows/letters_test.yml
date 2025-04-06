@@ -28,6 +28,11 @@ jobs:
               with:
                 python-version: ${{matrix.python-version}}
 
+            - name: Install Python Dependecies
+              run: |
+                python -m pip install --upgrade pip 
+                pip install -r ../requirements.txt
+
             - name: Test App Code
-              run: python test_main.py
+              run: python Package/test_main.py
             
