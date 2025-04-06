@@ -8,9 +8,9 @@ on:
 jobs:
     test:
         runs-on: ubuntu-latest
-        defaults: 
-            run:
-                working-directory: ./Package/
+        # defaults: 
+        #     run:
+        #         working-directory: ./Package/
 
         strategy:
             matrix:
