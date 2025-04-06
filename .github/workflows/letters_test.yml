@@ -9,9 +9,9 @@ on:
 jobs:
     test:
         runs-on: ubuntu-latest
-        defaults: 
-            run:
-                working-directory: github_actions
+        # defaults: 
+        #     run:
+        #         working-directory: github_actions
 
         strategy:
             matrix:
@@ -26,7 +26,7 @@ jobs:
             - name: Set up Python 
               uses: actions/setup-python@v4
               with:
-                python-version: $ {{matrix.python-version}}
+                python-version: ${{matrix.python-version}}
 
             - name: Test App Code
               run: python test_main.py
